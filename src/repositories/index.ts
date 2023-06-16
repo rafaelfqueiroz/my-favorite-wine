@@ -1,5 +1,5 @@
-import { WineMongoDbRepository } from "./mongodb/wine.repository"
+//import { WineMongoDbRepository } from "./mongodb/wine.repository";
 
-const wineMongoDbRepository = new WineMongoDbRepository
+//const wineMongoDbRepository = new WineMongoDbRepository();
 
-export { wineMongoDbRepository } 
+//export { WineMongoDbRepository };

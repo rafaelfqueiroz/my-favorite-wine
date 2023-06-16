@@ -1,18 +1,17 @@
-import { Wine } from "../models"
-import { WineRepository } from "../repositories/interfaces/wine.repository"
+import { Wine } from "../models";
+import { WineRepository } from "../repositories/interfaces/wine.repository";
 
 export class WineService {
-    private randomN: Number = Math.random()
-    constructor(private readonly repository: WineRepository) {}
+    private randomN: Number = Math.random();
+    constructor() {}
 
-    save(wine: Wine) {
+    async save(wine: Wine) {
+        //return await this.repository.create(wine);
     }
-    getAll(): Wine[] {
-        return []
+    async getAll() {
+        //return await this.repository.find();
     }
-    get(): String[] {
-        return [
-            "Wine-"+this.randomN
-        ]
+    async get(id: String) {
+        //return await this.repository.findById(id);
     }
 }

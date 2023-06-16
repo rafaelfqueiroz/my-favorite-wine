@@ -2,7 +2,6 @@
     "name": "my-favorite-winery",
     "version": "1.0.0",
     "description": "",
-    "main": "app.js",
     "scripts": {
         "start:dev": "npx nodemon",
         "start": "ts-node-dev ./src/app.ts",
@@ -15,8 +14,7 @@
         "body-parser": "^1.20.2",
         "dotenv": "^16.0.3",
         "eslint": "^8.36.0",
-        "express": "^4.18.2",
-        "mongoose": "^7.0.3"
+        "express": "^4.18.2"
     },
     "devDependencies": {
         "@types/body-parser": "^1.19.2",

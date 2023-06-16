@@ -1,7 +1,6 @@
-import { WineController } from "./wine.controller"
+import { WineController } from "./wine.controller";
 
-import { wineService } from "../services"
+import { wineService } from "../services";
 
-
-const wineController = new WineController(wineService)
-export { wineController }
+const wineController = new WineController(wineService);
+export { wineController };

@@ -1,6 +1,6 @@
-import { wineMongoDbRepository } from "../repositories"
-import { WineService } from "./wine.service"
+//import { WineMongoDbRepository } from "../repositories";
+import { WineService } from "./wine.service";
 
-const wineService = new WineService(wineMongoDbRepository)
+const wineService = new WineService();
 
-export { wineService }
+export { wineService };
