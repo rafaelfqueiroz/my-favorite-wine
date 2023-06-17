@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const dbConfig = {
-    url: "mongodb://localhost:27017/test",
+    url: "mongodb://root:pass@localhost:27017/my-favorite-wine?authSource=admin",
 };
 
 const serverConfig = {

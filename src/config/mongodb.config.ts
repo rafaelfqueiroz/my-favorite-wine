@@ -3,7 +3,12 @@ import { dbConfig } from "./config";
 
 export class MongoDbConnection {
     connect() {
-        Mongoose.connect(dbConfig.url, { retryWrites: true, w: "majority" })
+        console.log("Connecting to mongodb.");
+        Mongoose.connect(dbConfig.url, {
+            dbName: "my-favorite-wine",
+            user: "root",
+            pass: "pass",
+        })
             .then(() => {
                 console.log("Successfuly connected to mongo database.");
             })
